@@ -42,8 +42,14 @@ const userSchema = new mongoose.Schema(
       default: false
     },
 
-    emailVerifyToken: {
-      type: String,
+    emailOtp:
+      {
+        type: Number,
+        default: null
+      },
+
+    emailOtpExpiry: {
+      type: Date,
       default: null
     },
 
